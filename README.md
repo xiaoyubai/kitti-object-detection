@@ -31,6 +31,8 @@ The kitti object detection dataset consists of 7481 train- ing images and 7518 t
 ...![](imgs/resized_img.png)
 ### Useful cmd
 
-1.transfer files between workstation and gcloud
-gcloud compute copy-files *.png project-cpu:/home/eric/project/kitti-ssd/kitti-object-detection/imgs
+1.transfer files between workstation and gcloud  
+
+gcloud compute copy-files SSD.png project-cpu:/home/eric/project/kitti-ssd/kitti-object-detection/imgs  
+
 2. 
