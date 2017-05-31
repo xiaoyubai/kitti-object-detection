@@ -13,7 +13,7 @@ The goal of this project is to understand different meth- ods for 2d-Object dete
 
 (Single Short Detector) SSD is a relatively simple ap- proach without regional proposals. The first step is to re- size all images to 300x300 and use VGG-16 CNN to ex- tract feature maps. Then several feature layers help predict the offsets to default boxes of different scales and aspect ra- tios and their associated confidences. I havent finished the implementation of all the feature layers.  
 
-[](imgs/SSD.png)  
+![](imgs/SSD.png)  
 
 SSD only needs an input image and ground truth boxes for each object during training. For each default box, the shape offsets and the confidences for all object categories ((c1, c2, , cp)) are predicted. At training time, we calculate the difference between these default boxes to the ground truth boxes. The model loss is a weighted sum between localization loss (e.g. Smooth L1 [6]) and confidence loss (e.g. Softmax).  
 
